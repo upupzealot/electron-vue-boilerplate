@@ -11,6 +11,7 @@ module.exports = {
   },
   pluginOptions: {
     electronBuilder: {
+      preload: 'src/preload.js',
       builderOptions: {
         productName: cname,
         // options placed here will be merged with default configuration and passed to electron-builder
